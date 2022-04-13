@@ -2,6 +2,11 @@ import React from "react";
 import ProductTile from "./ProductTile";
 
 class ProductCatalog extends React.Component {
+    
+    constructor(props){
+        super(props)
+        // console.log(props.products);
+    }
 
     renderTile = (current_item) => {
         return <ProductTile product={current_item}></ProductTile>;
